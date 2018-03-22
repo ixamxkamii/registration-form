@@ -7,3 +7,23 @@ html {
 .content {
   background-color: #fff;
 }
+
+.title {
+  border-bottom: 1px solid black;
+}
+
+legend {
+  padding-right: 1rem;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .left-form {
+    padding-right: .5rem;
+  }
+
+  .right-form {
+    padding-left: .5rem;
+  }
+
+}
