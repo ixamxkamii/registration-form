@@ -12,36 +12,46 @@
 <body>
 
   <section>
-    <div>
+    <div class="content wrapper island">
       <h1>Want to go to Mars?</h1>
       <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 
       <form>
         <h2>Personal details</h2>
+        <div class="grid">
+          <div class="unit xs-1 s-1 m-1-2 l-1-2">
+            <label for="name">Name</label>
+            <input id="name" required>
+          </div>
+          <div class="unit xs- s-1 m-1-2 l-1-2">
+            <label for="age">Age</label>
+            <input id="age" required>
+          </div>
+          <div class="unit xs-1 s-1 m-1-2 l-1-2">
+            <label for="email">Your email</label>
+            <input id="email" type="email" name="email" required>
+          </div>
+          <div class="unit xs-1 s-1 m-1-2 l-1-2">
+            <label for="physical-fitness">Physical Fitness</label>
+            <select id="physical-fitness" name="_physical-fitness">
+              <option>Super-human</option>
+              <option>Fit as a fiddle</option>
+              <option>Not terribly strong</option>
+              <option>A little couch-potato-y</option>
+            </select>
+          </div>
+          <div class="unit xs-1 s-1 m-1 l-1">
+            <label for="Address">Address</label>
+            <input id="address" required>
+          </div>
+        </div>
+        <h2>Mission statement</h2>
         <div>
-          <label for="name">Name</label>
-          <input id="name" required>
+          <label for="why-do-you-want-to-go-to-mars">Why do you want to go to Mars?</label>
+          <input id="why-do-you-want-to-go-to-mars" required>
         </div>
         <div>
-          <label for="age">Age</label>
-          <input id="age" required>
-        </div>
-        <div>
-          <label for="email">Your email</label>
-          <input id="email" type="email" name="email" required>
-        </div>
-        <div>
-          <label for="physical-fitness">Physical Fitness</label>
-          <select id="physical-fitness" name="_physical-fitness">
-            <option>Super-human</option>
-            <option>Fit as a fiddle</option>
-            <option>Not terribly strong</option>
-            <option>A little couch-potato-y</option>
-          </select>
-        </div>
-        <div>
-          <label for="Address">Address</label>
-          <input id="address" required>
+          <button class="btn" type="submit">Register for the trip!</button>
         </div>
       </form>
     </div>
